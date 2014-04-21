@@ -1,0 +1,21 @@
+<h1>New Message</h1>
+
+<% if @message.errors.any? %>
+  <p>Something went wrong:</p>
+  <ul>
+    <% message.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+<%= form_for @message do |f| %>
+  <%= f.label :to %><br>
+  <%= f.text_field :to %><br>
+  <%= f.label :from %><br>
+  <%= f.text_field :from %><br>
+  <%= f.label :body %><br>
+  <%= f.text_area :body %><br>
+  <%= f.submit %><br>
+<% end %>
