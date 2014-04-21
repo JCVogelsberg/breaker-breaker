@@ -3,7 +3,8 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-private
+  private
+
 
   def user_params
     params.require(:user).permit(:email,
@@ -12,5 +13,12 @@ private
                                  :remember_me)
   end
 
+  def authorize
+    redirect_to root_path, alert: "Please sign in to send a method." if current_user.nil?
+  end
 
 end
+
+
+
+
