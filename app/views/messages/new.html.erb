@@ -12,10 +12,10 @@
 
 <%= form_for @message do |f| %>
   <%= f.label :to %><br>
-  <%= f.text_field :to %><br>
+  <%= f.text_field, :value => "3866310258" :to %><br>
   <%= f.label :from %><br>
   <%= f.text_field :from %><br>
   <%= f.label :body %><br>
-  <%= f.text_area :body, :value => "3866310258" %><br>
+  <%= f.text_area :body %><br>
   <%= f.submit %><br>
 <% end %>
