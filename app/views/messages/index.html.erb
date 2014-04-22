@@ -1,9 +1,4 @@
-<h1>Messages</h1>
+<h3><center>Your message was sent! Would you like to send another?</center></h3>
+<br><br>
 
-<ul>
-  <% @messages.each do |message| %>
-    <li><%= link_to message.id, message_path(message) %></li>
-  <% end %>
-</ul>
-
-<%=  link_to "New Message", new_message_path %>
+<h3><center> <%=  link_to "Send a New Message", new_message_path %> </center></h3>
