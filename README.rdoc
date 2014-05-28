@@ -1,11 +1,11 @@
--------------------
-BreakerBreaker!
 ===================
+BreakerBreaker!
+-------------------
 
 BreakerBreaker! is a a text-messaging app that allows a user to send a text message through the internet. 
 It uses a Rails back-end, and Twilio to handle messaging.
 
-===================================================================================================
+----------------------------------------------------------------------------------------------------------
 To set up:
 
 -Clone the repo on your local machine ($ git clone https://github.com/JCVogelsberg/BreakerBreaker-.git)
