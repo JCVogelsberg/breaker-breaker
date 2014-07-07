@@ -2,7 +2,7 @@ BreakerBreaker!
 ===
 
 BreakerBreaker! is a text-messaging app that allows a user to send a text message through the internet. 
-It uses a Rails back-end, and Twilio to handle messaging.
+It uses a Rails back-end, and Twilio to handle messaging.  
 
 * * *
 
