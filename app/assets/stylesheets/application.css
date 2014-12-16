@@ -15,8 +15,8 @@
 
 /*ADD CSS BELOW*/
 body {
-/*    background-image: url("apps/assets/images/transceiver_1.png");*/
-    background-image: url("transceiver_1.png" );
+    background-image: url("apps/assets/images/transceiver_1.png");
+/*    background-image: url("transceiver_1.png" );*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
