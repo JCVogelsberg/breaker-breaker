@@ -10,7 +10,20 @@
  *
  *= require_self
  *= require_tree .
- *= require bootstrap
  */
 
 
+/*ADD CSS BELOW*/
+body {
+    background-image: url("images/transceiver_1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+	background-color: white;
+	width: 65%;
+	height:80%;
+	border-width: 5px;
+	border-color: darkblue;
+}
