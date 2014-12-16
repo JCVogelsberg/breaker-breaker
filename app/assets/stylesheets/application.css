@@ -15,11 +15,13 @@
 
 /*ADD CSS BELOW*/
 body {
-    background-image: assets-url('transceiver_1.png');
+    background-image: url(app/assets/images('transceiver_1.png'));
 /*    background-image: url("transceiver_1.png" );*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
+
+
 
 
 
