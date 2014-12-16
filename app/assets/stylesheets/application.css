@@ -15,7 +15,7 @@
 
 /*ADD CSS BELOW*/
 body {
-    background: url('img/transceiver_1.png');
+    background-image: image-url('transceiver_1.png');
 /*    background-image: url("transceiver_1.png" );*/
     background-repeat: no-repeat;
     background-attachment: fixed;
