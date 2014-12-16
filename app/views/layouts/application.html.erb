@@ -5,16 +5,14 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href="breakerbreaker_CSS_test_file.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <br><br>
-  <div class="container">
+<!--   <div class="container"> -->
     <div id="info-box">
-      <div id="user_nav">
-        <div class="row">
-          <%= image_tag("cbradio.jpg", height: '25%', width: '25%', class: "img-responsive center-block") %>
-        </div>
-        <center>
+      <img id="bblogo" src="cbradio.jpg">
+      <center>
         <% if user_signed_in? %>
           Logged in as <strong><%= current_user.email %></strong>.
           <%= link_to 'Edit profile', edit_user_registration_path %> |
@@ -28,15 +26,16 @@
           </h4>
         <% end %>
       </center>
-      </div>
       <br>
       <br>
       <%= flash[:notice] %>
       <h3><center><em> <%= flash[:alert] %> </em></center></h3>
       <%= yield %>
     </div>
-  </div>
+  <!-- </div> -->
   <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br>
   <center><i> JCVogelsberg * 2014</i></center>
   <br><br>
 </body>

@@ -15,18 +15,28 @@
 
 /*ADD CSS BELOW*/
 body {
-    background-image: url("apps/assets/images/transceiver_1.png");
+/*    background-image: url("apps/assets/images/transceiver_1.png");*/
+    background-image: url("transceiver_1.png" );
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: 100%;
+
 }
 
 #info-box {
-
-	background-color: pink;
+	background-color: tomato;
 	width: 65%;
-	height:80%;
+	height: 80%;
 	border-width: 5px;
 	border-color: darkblue;
 	margin: 0 auto;
-	/*text-align: center;*/
+	margin-top: 10%;
+}
+
+img#bblogo {
+	height: 25%;
+	width: 25%;
+	margin: 0 auto;
+
+
 }
