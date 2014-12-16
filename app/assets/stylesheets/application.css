@@ -15,15 +15,18 @@
 
 /*ADD CSS BELOW*/
 body {
-    background-image: url("images/transceiver_1.png");
+    background-image: url("apps/assets/images/transceiver_1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-#container {
+#info-box {
+
 	background-color: pink;
 	width: 65%;
 	height:80%;
 	border-width: 5px;
 	border-color: darkblue;
+	margin: 0 auto;
+	/*text-align: center;*/
 }
