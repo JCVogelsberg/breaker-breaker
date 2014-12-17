@@ -17,8 +17,8 @@
 body {
 /*    background-image: image-url('transceiver_1.png');
     background-image: url("transceiver_1.png" );
-    background-repeat: no-repeat;
-*/    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+    background-attachment: fixed;
     background-size: 100%;
 
 
@@ -29,7 +29,7 @@ body {
 }
 
 #info-box {
-	background-color: tomato;
+	background-color: #667744;
 	width: 65%;
 	height: 80%;
 	border-width: 5px;

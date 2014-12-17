@@ -8,10 +8,9 @@
 <!--   <link href="breakerbreaker_CSS_test_file.css" rel="stylesheet" type="text/css"/> -->
 </head>
 <body style="background-image: url('transceiver_1.png');">
-<br><br>
-<!--   <div class="container"> -->
+  <br><br>
     <div id="info-box">
-      <img id="bblogo" src="cbradio.jpg">
+      <!--       <img id="bblogo" src="cbradio.jpg"> -->
       <center>
         <% if user_signed_in? %>
           Logged in as <strong><%= current_user.email %></strong>.
@@ -32,7 +31,6 @@
       <h3><center><em> <%= flash[:alert] %> </em></center></h3>
       <%= yield %>
     </div>
-  <!-- </div> -->
   <br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br>
       <br><br><br><br><br><br><br><br><br><br>
