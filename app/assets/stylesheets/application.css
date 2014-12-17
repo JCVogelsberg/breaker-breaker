@@ -20,23 +20,18 @@ body {
     background-repeat: no-repeat;*/
     background-attachment: fixed;
     background-size: 100%;
-
-
-
-
-
-
 }
+
 
 #info-box {
-	background-color: #667744;
+	background-color: #CCBB99;
 	width: 65%;
 	height: 80%;
-	border-width: 5px;
-	border-color: darkblue;
 	margin: 0 auto;
 	margin-top: 10%;
+	border-radius: 10%;
 }
+
 
 img#bblogo {
 	height: 25%;
