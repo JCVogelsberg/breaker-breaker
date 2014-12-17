@@ -15,11 +15,10 @@
 
 /*ADD CSS BELOW*/
 body {
-	  background-image:url('<%= asset_path("transceiver_1.png") %> ');
-    /*background-image: image-url('transceiver_1.png');*/
-		/*background-image: url("transceiver_1.png" );*/
+/*    background-image: image-url('transceiver_1.png');
+    background-image: url("transceiver_1.png" );
     background-repeat: no-repeat;
-    background-attachment: fixed;
+*/    background-attachment: fixed;
     background-size: 100%;
 
 
