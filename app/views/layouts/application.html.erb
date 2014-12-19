@@ -5,38 +5,48 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-<!--   <link href="breakerbreaker_CSS_test_file.css" rel="stylesheet" type="text/css"/> -->
 </head>
-<body style="background-image: url('transceiver_1.png');">
-<br><br>
-<!--   <div class="container"> -->
-    <div id="info-box">
-      <img id="bblogo" src="images/bblogo.png" alt="">
-      <center>
-        <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to 'Edit profile', edit_user_registration_path %> |
-          <%= link_to "Logout", destroy_user_session_path, method: :delete %> |
-           <%= link_to "Send a message", new_message_path %>
-        <% else %>
-          <br>
-          <h4>
-          <%= link_to "Sign up", new_user_registration_path %> |
-          <%= link_to "Login", new_user_session_path %>
-          </h4>
-        <% end %>
-      </center>
-      <br>
-      <br>
-      <%= flash[:notice] %>
-      <h3><center><em> <%= flash[:alert] %> </em></center></h3>
-      <%= yield %>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-linear">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#"><i>Breaker-Breaker!</i></a>
+        <div class="nav-collapse">
+
+        <ul class="nav">
+          <% if user_signed_in? %>
+            <li>Logged in as <strong><%= current_user.email %></strong> </li>
+            <li><%= link_to 'Edit profile', edit_user_registration_path %> </li>
+            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
+            <li><%= link_to "Send a message", new_message_path %> </li>
+          <% else %>
+            <li><%= link_to "Sign up", new_user_registration_path %> </li>
+            <li><%= link_to "Login", new_user_session_path %> </li>
+          <% end %>
+        </ul>
+
+        </div>
+      </div>
     </div>
-  <!-- </div> -->
-  <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-      <br><br><br><br><br><br><br><br><br><br>
-  <center><i> JCVogelsberg * 2014</i></center>
-  <br><br>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="span9">
+        <%= flash[:notice] %>
+        <h3><center><em> <%= flash[:alert] %> </em></center></h3>
+        <%= yield %>
+      </div>
+      <div class="span3">
+      <p>Yo, I'm a SideBar! Here's where you explain what <em>Breaker-Breaker!</em> is and the technologies you used to build it. Be sure to sound Fancy!</p>
+      </div>
+    </div>
+  </div>
+  <footer><i> JCVogelsberg * 2014</i></footer>
 </body>
 </html>

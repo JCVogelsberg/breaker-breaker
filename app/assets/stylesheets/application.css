@@ -9,34 +9,8 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
+
+ *= require bootstrap_and_overrides
  */
 
 
-/*ADD CSS BELOW*/
-body {
-/*    background-image: image-url('transceiver_1.png');
-    background-image: url("transceiver_1.png" );
-    background-repeat: no-repeat;*/
-    background-attachment: fixed;
-    background-size: 100%;
-}
-
-
-#info-box {
-	background-color: #CCBB99;
-	width: 65%;
-	height: 80%;
-	margin: 0 auto;
-	margin-top: 10%;
-	border-radius: 25%;
-}
-
-
-img#bblogo {
-/*	height: 25%;
-	width: 25%;*/
-	margin: 0 auto;
-
-
-}

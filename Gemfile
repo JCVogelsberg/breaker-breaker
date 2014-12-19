@@ -4,16 +4,20 @@ ruby '2.1.0'
 
 gem 'rails', '4.0.4'
 gem 'pg'
-gem 'sass-rails'
+# gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'launchy'
 gem 'devise'
 gem 'textacular'
+gem 'twitter-bootstrap-rails'
+gem "therubyracer"
+gem "less-rails"
+
 
 group :development do
   gem 'better_errors'
