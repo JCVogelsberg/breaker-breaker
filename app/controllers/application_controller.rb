@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def authorize
-    redirect_to root_path, alert: "Please sign in to send a method." if current_user.nil?
+    redirect_to root_path, alert: "Please sign in to send a message." if current_user.nil?
   end
 
 end

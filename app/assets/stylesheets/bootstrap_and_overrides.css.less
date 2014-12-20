@@ -1,27 +1,39 @@
 @import "twitter/bootstrap/bootstrap";
 
-	body {
-		padding-top: 60px;
-	}
+body {
+	padding-top: 60px;
+}
+
+
+.container-fluid {
+	padding-top: 40px;
+}
+
+
+.brand {
+	padding-top: 60px;
+}
+
+
+footer {
+    font-size: 1em;
+    text-align: center;
+    clear: both;
+    padding-top: 50px;
+    color: #tomato;
+}
+
+
+
+
+
+
 
 @import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths
-@iconSpritePath: image-url("twitter/bootstrap/glyphicons-halflings.png");
-@iconWhiteSpritePath: image-url("twitter/bootstrap/glyphicons-halflings-white.png");
-
-// Set the Font Awesome (Font Awesome is default. You can disable by commenting below lines)
-@fontAwesomeEotPath: asset-url("fontawesome-webfont.eot");
-@fontAwesomeEotPath_iefix: asset-url("fontawesome-webfont.eot?#iefix");
-@fontAwesomeWoffPath: asset-url("fontawesome-webfont.woff");
-@fontAwesomeTtfPath: asset-url("fontawesome-webfont.ttf");
-@fontAwesomeSvgPath: asset-url("fontawesome-webfont.svg#fontawesomeregular");
-
-// Font Awesome
-@import "fontawesome/font-awesome";
-
-// Glyphicons
-//@import "twitter/bootstrap/sprites.less";
+@iconSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings.png');
+@iconWhiteSpritePath: asset-path('twitter/bootstrap/glyphicons-halflings-white.png');
 
 // Your custom LESS stylesheets goes here
 //
@@ -29,7 +41,7 @@
 // you may use and inherit here
 //
 // If you'd like to override bootstrap's own variables, you can do so here as well
-// See http://twitter.github.com/bootstrap/customize.html#variables for their names and documentation
+// See http://twitter.github.com/bootstrap/less.html for their names and documentation
 //
 // Example:
 // @linkColor: #ff0000;

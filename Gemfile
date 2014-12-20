@@ -4,12 +4,10 @@ ruby '2.1.0'
 
 gem 'rails', '4.0.4'
 gem 'pg'
-# gem 'sass-rails'
 gem 'uglifier'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-# gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'launchy'
 gem 'devise'
@@ -17,6 +15,8 @@ gem 'textacular'
 gem 'twitter-bootstrap-rails'
 gem "therubyracer"
 gem "less-rails"
+gem 'rest-client'
+gem 'dotenv-rails'
 
 
 group :development do
@@ -30,8 +30,6 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'capybara'
-  gem 'rest-client'
-  gem 'dotenv-rails'
 end
 
 group :test do
@@ -40,6 +38,4 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'rest-client'
-  gem 'dotenv-rails'
 end
