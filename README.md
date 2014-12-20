@@ -6,7 +6,7 @@ It uses a Rails back-end, and the Twilio API to handle SMS messaging. Styling is
 
 * * *
 
-The app is live on Heroku at http://breakerbreaker321.herokuapp.com/messages
+The app is live on Heroku at http://breakerbreaker321.herokuapp.com
 
 * * *
 
