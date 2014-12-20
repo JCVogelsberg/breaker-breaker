@@ -6,12 +6,11 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="bootstrap.js"></script> -->
 </head>
 <body>
   <div class="navbar navbar-fixed-top">
-    <a href="http://breakerbreaker321.herokuapp.com/"><img src="/cbradio.jpg" class="brand" alt="Breaker Breaker Logo" width="101" height="78"></a>
     <div class="navbar-linear">
+      <a href="http://breakerbreaker321.herokuapp.com/"><img src="/bb_title.png" class="brand" alt="Breaker Breaker Logo" ></a>
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
@@ -39,20 +38,25 @@
     <div class="row">
       <div class="span9">
         <br/>
-        <%= flash[:notice] %>
+        <div class="white_back">
+          <%= flash[:notice] %>
+          <h3><em> <%= flash[:alert] %> </em></h3>
+        </div>
         <br/>
-        <h3><center><em> <%= flash[:alert] %> </em></center></h3>
-        <br/>
-        <%= yield %>
+        <div class="white_back">
+          <%= yield %>
+        </div>
       </div>
       <div class="span3">
+        <div class="white_back">
         <h4>How Does It Work?</h4>
-        <p>Aesthetic Wes Anderson YOLO, try-hard cray mustache freegan cliche mlkshk. Lo-fi deep v tattooed Kickstarter farm-to-table church-key blog jean shorts, polaroid typewriter art party bespoke PBR Etsy. Freegan Shoreditch deep v, cornhole kogi forage listicle pour-over typewriter. Beard tousled DIY aesthetic banh mi pickled, Godard before they sold out Helvetica PBR&B mumblecore. Tousled twee trust fund Odd Future. </p>
-        <br/>
+          <p>Aesthetic Wes Anderson YOLO, try-hard cray mustache freegan cliche mlkshk. Lo-fi deep v tattooed Kickstarter farm-to-table church-key blog jean shorts, polaroid typewriter art party bespoke PBR Etsy. Freegan Shoreditch deep v, cornhole kogi forage listicle pour-over typewriter. Beard tousled DIY aesthetic banh mi pickled, Godard before they sold out Helvetica PBR&B mumblecore. Tousled twee trust fund Odd Future. </p>
+          <br/>
+        </div>
       </div>
     </div>
   </div>
-  <footer>
+  <footer class="footer">
     <a href="http://www.jasonvogelsberg.com/" target="_blank"><em>&#169; J. Vogelsberg 2014 </em></a>
   </footer>
 </body>
