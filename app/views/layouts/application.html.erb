@@ -10,10 +10,7 @@
 </head>
 <body>
   <div class="navbar navbar-fixed-top">
-
     <a href="http://breakerbreaker321.herokuapp.com/"><img src="/cbradio.jpg" class="brand" alt="Breaker Breaker Logo" width="101" height="78"></a>
-
-
     <div class="navbar-linear">
       <div class="container">
         <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -21,21 +18,18 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-
         <div class="nav-collapse">
-
-        <ul class="nav">
-          <% if user_signed_in? %>
-            <li>Logged in as <strong><%= current_user.email %></strong> </li>
-            <li><%= link_to 'Edit profile', edit_user_registration_path %> </li>
-            <li><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
-            <li><%= link_to "Send a message", new_message_path %> </li>
-          <% else %>
-            <li><%= link_to "Sign up", new_user_registration_path %> </li>
-            <li><%= link_to "Login", new_user_session_path %> </li>
-          <% end %>
-        </ul>
-
+          <ul class="nav">
+            <% if user_signed_in? %>
+              <li>Logged in as <strong><%= current_user.email %></strong> </li>
+              <li><%= link_to 'Edit profile', edit_user_registration_path %> </li>
+              <li><%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
+              <li><%= link_to "Send a message", new_message_path %> </li>
+            <% else %>
+              <li><%= link_to "Sign up", new_user_registration_path %> </li>
+              <li><%= link_to "Login", new_user_session_path %> </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
@@ -51,7 +45,7 @@
         <br/>
         <%= yield %>
       </div>
-      <div class="span3">
+      <div class="span4">
         <h4>How Does It Work?</h4>
         <p>Aesthetic Wes Anderson YOLO, try-hard cray mustache freegan cliche mlkshk. Lo-fi deep v tattooed Kickstarter farm-to-table church-key blog jean shorts, polaroid typewriter art party bespoke PBR Etsy. Freegan Shoreditch deep v, cornhole kogi forage listicle pour-over typewriter. Beard tousled DIY aesthetic banh mi pickled, Godard before they sold out Helvetica PBR&B mumblecore. Tousled twee trust fund Odd Future. </p>
         <br/>
