@@ -38,5 +38,5 @@ end
 group :production do
   gem 'rails_12factor'
   gem 'rest-client'
-	gem 'dotenv-rails'
+  gem 'dotenv-rails'
 end
